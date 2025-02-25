@@ -1,0 +1,93 @@
+.menu{
+  height: 50px;
+}
+
+.icon{
+  height: 27px;
+}
+
+header{
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.HeaderContainer{
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.menuDropDown{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  border-radius: 5vw;
+  border: 3px solid white;
+  background-color: white;
+
+  
+  span{
+    font-weight: bold;
+    padding-right: 20px;
+  }
+
+  .menu{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--cor);
+  }
+}
+
+.Language{
+  gap: 6px;
+  display: flex;
+  color: white;
+  align-items: center;
+
+  .active{
+    font-weight: bold;
+  }
+}
+
+.Search{
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  border-radius: 5vw;;
+  border: 3px solid white;
+
+  input{
+    padding-left: 20px;
+    border-radius: 5vw;
+    border: none;
+  }:focus{
+    outline: none;
+  }
+
+  img{
+    padding: 10px;
+    border-radius: 5vw;
+    background-color: var(--cor);
+  }:hover{
+    cursor: pointer;
+  }
+}
+
+.Login{
+  width: 130px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  
+  color: white;
+  border-radius: 5vw;
+  border: 3px solid white;
+
+  img{
+    height: 42px;
+  }
+}
