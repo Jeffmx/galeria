@@ -1,16 +1,22 @@
 import "./Header.css"
 import searchIcon from "../assets/search.svg"
-import guestIcon from "../assets/guest.png"
-import menuIcon from "../assets/menu.svg"
-import langIcon from "../assets/lang.svg"
+import guestIcon  from "../assets/guest.png"
+import menuIcon   from "../assets/menu.svg"
+import langIcon   from "../assets/lang.svg"
+import downIcon   from "../assets/down.svg"
 
 const Header = () =>{
   return(
     <header>
-      <div className="HeaderContainer">
+      <div className="HeaderContainer_L">
         <div className="menuDropDown">
           <span>Menu</span>
           <img className="menu" src={menuIcon}/>
+          <div className="menuDropDownContent">
+            <h2>Sobre nos</h2>
+            <h2>Artigos</h2>
+            <h2>Novidades</h2>
+          </div>
         </div>
         <div className="Language">
           <img className="icon" src={langIcon}/>
@@ -19,7 +25,7 @@ const Header = () =>{
         </div>
       </div>
 
-      <div className="HeaderContainer">
+      <div className="HeaderContainer_R">
         <div className="Search">
           <input placeholder="Pesquisar"></input>
           <img className="icon" src={searchIcon}/>
@@ -27,6 +33,7 @@ const Header = () =>{
         <div className="Login">
           <img className="icon" src={guestIcon}/>
           Guest
+          <img src={downIcon}/>
         </div>
       </div>
     </header>

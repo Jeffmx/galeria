@@ -1,11 +1,30 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: "Roboto", serif;
   font-size: 18px;
 }
 
+p{
+  font-size: 2vmin;
+}
+
+h1{
+  font-size: 5.6vmin;
+  font-family: "Red Rose", serif;
+}
+
 :root {
-  background-color: gray;
+  font-family: "Roboto", serif;
+  background-color: #fef9f3;
   --cor:#fad19e;
+}
+
+body{
+  padding: 1% 5%;
+}
+
+@media (max-width: 425px){
+  body{
+    padding: 5%;
+  }
 }

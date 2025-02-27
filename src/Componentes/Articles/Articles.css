@@ -1,0 +1,125 @@
+.content {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 22vw 8vw 30vw;
+  grid-template-rows: 215px 215px;
+  grid-template-areas:
+  'texto texto likes'
+  'discover extra extra';
+}
+
+.intro {
+  grid-area: texto;
+}
+
+.div2 {
+  grid-area: likes;
+  align-content: center;
+  width: 15vmax;
+
+  span{
+    font-size: 30px;
+  }
+
+  p{
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .followUps{
+    display: flex;
+    position: relative;
+    --distancia: 35px;
+
+    img, a{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 3px solid #fef9f3;
+    }
+
+    img{
+      position: absolute;
+      left: 0px;
+    }
+
+    :nth-child(2) {transform: translateX(var(--distancia))}
+    :nth-child(3) {transform: translateX(calc(var(--distancia)*2))}
+    :nth-child(4) {transform: translateX(calc(var(--distancia)*3))}
+    :nth-child(5) {transform: translateX(calc(var(--distancia)*4))}
+
+
+    a{
+      display: flex;
+      width: 50px;
+      
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
+      background-color: var(--cor);
+      
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+.desc {
+  grid-area: discover;
+  padding-top: 20px;
+  color: gray;
+
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  align-items: center;
+
+  .imglink{
+    width: 25px;
+    border: 2px solid var(--cor);
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .articleButton{
+    width: 180px;
+    height: 60px;
+    padding: 20px;
+    appearance: none;
+    font-weight: bold;
+    
+    background-color: var(--cor);
+    border: 2px solid var(--cor);
+    border-radius: 10vmax;
+    transition: .3s;
+    cursor: pointer;
+  }
+  .articleButton:hover{
+    filter: invert(1);
+  }
+}
+
+.div4 {
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: end;
+  justify-content: center;
+  grid-area: extra;
+}
+
+@media (max-width: 425px) {
+  .content{
+    padding-top: 5px;
+    grid-template-columns: 60vw;
+    grid-template-rows: repeat(4, 20vmax);
+    grid-template-areas: 'texto' 'likes' 'discover' 'extra';
+    
+    .intro{
+      padding-right: 10vmin;
+    }
+  }
+}
