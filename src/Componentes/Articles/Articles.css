@@ -1,7 +1,7 @@
 .content {
   display: grid;
   justify-content: start;
-  grid-template-columns: 22vw 8vw 30vw;
+  grid-template-columns: 22.5vw 5vw 22.5vw;
   grid-template-rows: 215px 215px;
   grid-template-areas:
   'texto texto likes'
@@ -10,21 +10,29 @@
 
 .intro {
   grid-area: texto;
+  h1{
+    font-size: 2.5vmax;
+    margin-right: 15%;
+  }
 }
 
 .div2 {
   grid-area: likes;
   align-content: center;
-  width: 15vmax;
 
+  h2{
+    font-size: 90%;
+  }
   span{
     font-size: 30px;
+    font-size: 160%;
   }
 
   p{
     color: gray;
     font-size: 15px;
     font-weight: bold;
+    padding-right: 25%;
   }
 
   .followUps{
@@ -68,13 +76,15 @@
 
 .desc {
   grid-area: discover;
-  padding-top: 20px;
   color: gray;
 
   display: grid;
   grid-template-rows: 20% 60% 20%;
   align-items: center;
 
+  h3{
+    font-size: 1.2vmax;
+  }
   .imglink{
     width: 25px;
     border: 2px solid var(--cor);
@@ -83,7 +93,6 @@
     cursor: pointer;
     padding: 10px;
   }
-
   .articleButton{
     width: 180px;
     height: 60px;
@@ -119,7 +128,15 @@
     grid-template-areas: 'texto' 'likes' 'discover' 'extra';
     
     .intro{
-      padding-right: 10vmin;
+      padding-right: 10vw;
+
+      p{
+        font-size: 2vmax;
+      }
+      h1{
+        font-size: 4.6vmax;
+        margin-right: 0px;
+      }
     }
   }
 }

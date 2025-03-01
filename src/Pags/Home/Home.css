@@ -66,5 +66,18 @@
 .feed{
   display: flex;
   margin-top: 25px;
+  gap: 25px;
   justify-content: space-between;
+}
+
+@media (max-width: 425px){
+  .container{
+    height: 25vmax;
+  }
+  .PostSection{
+    display: none;
+  }
+  .content{
+    grid-template-columns: 100%;
+  }
 }

@@ -1,9 +1,11 @@
 import "./Header.css"
-import searchIcon from "../assets/search.svg"
-import guestIcon  from "../assets/guest.png"
-import menuIcon   from "../assets/menu.svg"
-import langIcon   from "../assets/lang.svg"
-import downIcon   from "../assets/down.svg"
+import settingsIcon from "../assets/settings.svg"
+import logoutIcon   from "../assets/logout.svg"
+import searchIcon   from "../assets/search.svg"
+import guestIcon    from "../assets/guest.png"
+import menuIcon     from "../assets/menu.svg"
+import langIcon     from "../assets/lang.svg"
+import downIcon     from "../assets/down.svg"
 
 const Header = () =>{
   return(
@@ -33,7 +35,11 @@ const Header = () =>{
         <div className="Login">
           <img className="icon" src={guestIcon}/>
           Guest
-          <img src={downIcon}/>
+          <img className="loginMore" src={downIcon}/>
+          <div className="LoginDropDown">
+            <img src={settingsIcon}/>
+            <img src={logoutIcon}/>
+          </div>
         </div>
       </div>
     </header>
