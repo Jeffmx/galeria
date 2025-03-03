@@ -46,14 +46,14 @@
   right: var(--pos);
   background-image: 
     radial-gradient(circle farthest-side at 80% -25%, 
-                    transparent 60%, var(--corFora) 63%);
+                    transparent 60%, var(--corFora) 61.5%);
 }
 
 .bannerDeco::after{
   left: var(--pos);
   background-image: 
     radial-gradient(circle farthest-side at 20% -25%, 
-                    transparent 60%, var(--corFora) 63%);
+                    transparent 60%, var(--corFora) 61.5%);
 }
 
 .PostSection{
@@ -76,8 +76,5 @@
   }
   .PostSection{
     display: none;
-  }
-  .content{
-    grid-template-columns: 100%;
   }
 }

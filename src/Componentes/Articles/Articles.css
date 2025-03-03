@@ -94,8 +94,8 @@
     padding: 10px;
   }
   .articleButton{
-    width: 180px;
-    height: 60px;
+    width: 23vmin;
+    height: 7.5vmin;
     padding: 20px;
     appearance: none;
     font-weight: bold;
@@ -113,29 +113,79 @@
 
 .div4 {
   gap: 15px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-area: extra;
+  column-gap: 10px;
+  grid-template-columns: repeat(3, 33%);
+
   align-content: end;
   justify-content: center;
-  grid-area: extra;
+  justify-items: center;
 }
 
 @media (max-width: 425px) {
   .content{
     padding-top: 5px;
-    grid-template-columns: 60vw;
-    grid-template-rows: repeat(4, 20vmax);
-    grid-template-areas: 'texto' 'likes' 'discover' 'extra';
+    align-items: start;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 20vmax);
+    row-gap: 10px;
+    grid-template-areas: 
+    'texto texto' 
+    'likes discover' 
+    'extra extra';
     
     .intro{
       padding-right: 10vw;
-
       p{
         font-size: 2vmax;
       }
       h1{
         font-size: 4.6vmax;
         margin-right: 0px;
+      }
+    }
+
+    .div2{
+      justify-self: flex-end;
+      h2, p{
+        font-size: x-small;
+      }
+      .followUps{
+        --distancia: 15px;
+        img, a{
+          width: 20px;
+          height: 20px;
+          font-size: 6.5px;
+        }
+      }
+    }
+
+    .desc{
+      justify-items: center;
+      grid-template-rows: 40% 60% 20%;
+
+      .articleButton{
+        width: 120px;
+        display: flex;
+        padding: 15px;
+        font-size: 11px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .imglink{
+        width: 10px;
+        padding: 5px;
+      }
+    }
+
+    .div4{
+      padding-top: 25px;
+
+      h2{
+        font-size: 9px;
+        padding-bottom: 20px;
       }
     }
   }
