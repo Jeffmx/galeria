@@ -15,15 +15,15 @@ const Header = () =>{
           <span>Menu</span>
           <img className="menu" src={menuIcon}/>
           <div className="menuDropDownContent">
-            <h2>Sobre nos</h2>
-            <h2>Artigos</h2>
-            <h2>Novidades</h2>
+            <h2>About Us</h2>
+            <h2>Articles</h2>
+            <h2>News</h2>
           </div>
         </div>
         <div className="Language">
           <img className="icon" src={langIcon}/>
-          <a className="active">BR</a>
-          <a>EN</a>
+          <a >BR</a>
+          <a className="active">EN</a>
         </div>
       </div>
 

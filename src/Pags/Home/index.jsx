@@ -21,13 +21,13 @@ const Home = () =>{
         <Post 
           id='01'
           img={banner}
-          desc='manemonema anemonema'
-          nome='Beast War'
+          desc='Best Anime Fr Fr'
+          nome='TTGL'
         />
         <Post 
           id='02'
           img={banner2}
-          desc='anemonema manemonema'
+          desc='Absolute Cinema'
           nome='TTGL'
         />
       </section>
